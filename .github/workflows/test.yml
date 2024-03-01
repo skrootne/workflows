@@ -3,9 +3,6 @@
 name: Reusable CI
 on:
   workflow_call:
-    secrets:
-      MASTER_TOKEN:
-        required: true
 
 jobs:
   build:
