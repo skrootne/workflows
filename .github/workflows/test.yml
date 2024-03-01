@@ -1,0 +1,15 @@
+---
+
+name: Reusable CI
+on:
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run echo MASTER_TOKEN
+        run: echo ${{ secrets.MASTER_TOKEN }}
+      - name: Run echo MEGA_TOKEN
+        run: echo ${{ secrets.MEGA_TOKEN }}
