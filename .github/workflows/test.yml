@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run echo MASTER_TOKEN
-        run: echo ${{ secrets.MASTER_TOKEN }}
+      - name: Run echo REAL_TOKEN
+        run: echo ${{ secrets.REAL_TOKEN }}
